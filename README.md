@@ -37,3 +37,41 @@
       </p>
       
     </section>
+
+* {
+    box-sizing: border-box;
+    font-family: 'Oxygen', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: mandatory;
+}
+
+:root {
+    --color-backgroud: #030207;
+    --color-white: #fff;
+    --color-blue: #1474b4;
+
+}
+
+body {
+    background-color: var(--color-backgroud);
+    color: var(--color-white);
+
+}
+
+
+.inicio {
+    background: linear-gradient(rgba(0, 0, 0 ,0.1), var(--color-backgroud));
+    position: relative;
+    min-height: 100vh;
+
+}
+
+.inicio__background {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
+}
